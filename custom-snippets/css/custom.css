@@ -1,0 +1,101 @@
+:root {
+  --sofia-pro-soft-font: sofia-pro-soft;
+  --sofia-pro-font: sofia-pro;
+  --sofia-pro-condensed-font: sofia-pro-condensed;
+  --proxima-nova: proxima-nova;
+  --proxima-nova-condensed: proxima-nova-condensed;
+  --proxima-nova-extra-condensed: proxima-nova-extra-condensed;
+  --proxima-soft-font: proxima-soft;
+  --proxima-soft-condensed-font: proxima-soft-condensed;
+  --proxima-soft-extra-condensed-font: proxima-soft-extra-condensed;
+
+  --header-font-family: var(--proxima-nova-condensed), var(--sofia-pro-condensed), roboto-condensed, 'Helvetica Neue', arial, sans-serif !important;
+  --body-font-family: proxima-nova, sofia-pro, 'Avenir Next', Nunito, Roboto, 'Helvetica Neue', sans-serif !important;
+  --subheader-font-family: var(--proxima-nova-condensed), var(--proxima-nova-extra-condensed), sans-serif !important;
+  --monospace-font-family: 'Rec Mono Casual', 'SFMono', 'SF Mono', 'Roboto Mono', 'Meslo', 'Menlo', monospace !important;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--header-font-family);
+  font-weight: 900;
+}
+
+
+
+h5,
+h6,
+button,
+a,
+a:link {
+  font-family: var(--subheader-font-family);
+}
+
+h1,
+h2,
+h3,
+h5,
+h6 {
+  letter-spacing: -1px;
+}
+
+p,
+div,
+span,
+li,
+ul,
+ol,
+td,
+tr,
+input.text,
+input.title,
+input[type=email],
+input[type=password],
+input[type=tel],
+input[type=text],
+select,
+textarea {
+  font-family: var(--body-font-family);
+}
+
+code,
+pre {
+  font-family: var(--monospace-font-family);
+}
+
+button,
+button>span,
+a {
+  font-weight: 700;
+}
+
+img.mfp-img {
+  width: 800px;
+  max-width: 100%;
+  height: 800px;
+  display: block;
+  line-height: 0;
+  box-sizing: border-box;
+  padding: 40px 0 40px;
+  margin: 0 auto;
+}
+
+ol>li,
+ul>li {
+  margin-left: 2rem;
+}
+
+/* Contact-Form Alert Message */
+.et-pb-contact-message:has(p, ul>li)  {
+  background-color: #F0AA36;
+  color: #262942;
+  padding: 1rem 2rem !important;
+  border-radius: 10px;
+  font-style: italic;
+  border-top: 2px solid #ECBF75;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
